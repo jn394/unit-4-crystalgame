@@ -1,0 +1,28 @@
+.navbar {
+    background-color: rgb(218, 231, 188);
+    border-bottom: solid 10px rgba(64, 224, 171, 0.733);
+    margin-bottom: 20px;
+}
+
+body {
+    font-family: 'Ultra', serif;
+    color: darkgreen;
+    word-spacing: 10px;
+}
+
+.image {
+    display: inline-block;
+    margin: 50px;
+}
+
+.card {
+    width: 49%;
+    border-radius: 25px;
+}
+
+#crystalRow {
+    background-color: white;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+

@@ -17,10 +17,10 @@ $(document).ready(function () {
 
     //Sets the target value to a number and puts the wins/loses/score on HTML
     var targetValue = parseInt($("#random-number").val());
-    $("#random-number").text(targetValue);
-    $("#wins").text(winCount);
-    $("#loses").text(loseCount);
-    $("#score").text(score);
+    $("#random-number").text("Target: " + targetValue);
+    $("#wins").text("Wins: " + winCount);
+    $("#loses").text("Loses: " + loseCount);
+    $("#score").text("Score: " + score);
 
     //Checks if it works
     console.log(typeof targetValue); 
@@ -32,9 +32,9 @@ $(document).ready(function () {
     //A function that resets the game
     function myReset() {
         targetValue = parseInt($("#random-number").val());
-        $("#random-number").text(targetValue);
+        $("#random-number").text("Target: " + targetValue);
         score = 0;
-        $("#score").text(score);
+        $("#score").text("Score: " + score);
         myRandom()
     }
 
@@ -43,7 +43,7 @@ $(document).ready(function () {
         if (score == targetValue) {
             winCount = winCount + 1;
             alert("i won");
-            $("#wins").text(winCount);
+            $("#wins").text("Wins: " + winCount);
 
             //Resets the game
             myReset();
@@ -59,7 +59,7 @@ $(document).ready(function () {
         else if (score > targetValue) {
             loseCount = loseCount + 1;
             alert("i lost");
-            $("#loses").text(loseCount);
+            $("#loses").text("Loses: " + loseCount);
 
             //Resets the game
             myReset();
