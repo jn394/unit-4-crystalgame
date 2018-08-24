@@ -42,7 +42,7 @@ $(document).ready(function () {
     function didIwin() {
         if (score == targetValue) {
             winCount = winCount + 1;
-            alert("i won");
+            alert("Congrats You Won!");
             $("#wins").text("Wins: " + winCount);
 
             //Resets the game
@@ -58,7 +58,7 @@ $(document).ready(function () {
 
         else if (score > targetValue) {
             loseCount = loseCount + 1;
-            alert("i lost");
+            alert("Congrats You Lost!");
             $("#loses").text("Loses: " + loseCount);
 
             //Resets the game
